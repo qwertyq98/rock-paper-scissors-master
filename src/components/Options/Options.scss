@@ -1,0 +1,46 @@
+@import '../../vendor/constants.scss';
+@import '../../vendor/mixin.scss';
+
+.options {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 320px;
+  padding: 40px;
+  text-align: center;
+  &__title {
+    @include text($textL, 700, $textWhite);
+    margin: 20px auto;
+  }
+  &__wraper {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: space-between;
+  }
+  &__name {
+    @include text($textM, 600, $textGray);
+    line-height: 1.2;
+    align-self: center;
+    margin: 20px auto;
+  }
+  &__button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    border-radius: 25px;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 19px 37px 1px rgba(0, 0, 0, 0.40);
+    -moz-box-shadow: 10px 19px 37px 1px rgba(0, 0, 0, 0.40);
+    box-shadow: 10px 19px 37px 1px rgba(0, 0, 0, 0.40);
+    transition: 1s;
+  }
+  &__button:hover {
+    transform: scale(1.05);
+  }
+  &__img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}

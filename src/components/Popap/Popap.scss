@@ -1,0 +1,60 @@
+@import '../../vendor/constants.scss';
+@import '../../vendor/mixin.scss';
+
+
+.popap {
+  background-color: rgba(0,0,0,.3);
+  align-items: center;
+  bottom: 0;
+  color: #000;
+  display: flex;
+  justify-content: right;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: visibility .3s linear,opacity .3s linear;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+  pointer-events: all;
+  margin: 0 auto;
+  &__wraper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 420px;
+    background: $backgroundWhite;
+    align-items: center;
+    animation: ani .5s forwards;
+    &_text {
+      display: flex;
+      flex-direction: row;
+      padding: 35px 0;
+      width: 330px;
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    @include text($textM, 700, $textGray);
+    margin: 0;
+  }
+  &__button {
+    background-image: url('../../images/icon-close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: $backgroundWhite;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  &__img {
+    padding-top: 20px;
+  }
+}

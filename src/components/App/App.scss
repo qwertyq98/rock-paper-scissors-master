@@ -1,0 +1,7 @@
+@import '../../vendor/constants.scss';
+.page {
+  background: radial-gradient(at top, $backgroundOne, $backgroundTwo);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}

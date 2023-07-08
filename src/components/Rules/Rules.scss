@@ -1,0 +1,17 @@
+@import '../../vendor/constants.scss';
+@import '../../vendor/mixin.scss';
+
+.rules {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  &__button {
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid $backgroundWhite;
+    cursor: pointer;
+    @include text($textS, 600, $textWhite);
+  }
+}

@@ -1,0 +1,7 @@
+@mixin text($size, $weight, $color) {
+  font-family: 'Barlow Semi Condensed', 'Arial', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: 0.8;
+  color: $color;
+}

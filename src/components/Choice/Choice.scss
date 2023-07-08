@@ -1,0 +1,39 @@
+@import '../../vendor/constants.scss';
+@import '../../vendor/mixin.scss';
+
+.choice {
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1300px;
+  display: flex;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    text-align: center;
+    gap: 10px 40px;
+    justify-items: center;
+  }
+  &__text {
+    @include text($textM, 600, $textWhite);
+    margin: 20px 0 60px;
+  }
+  &__result-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  }
+  &__result-text {
+    @include text($textXL, 600, $textWhite);
+    width: 280px;
+    margin: 0;
+  }
+  &__result-button {
+    width: 220px;
+    margin: 25px 0 0;
+    height: 55px;
+    border-radius: 10px;
+    @include text($textS, 600, $textBlue);
+    cursor: pointer;
+  }
+}

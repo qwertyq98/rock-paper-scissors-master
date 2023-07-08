@@ -1,0 +1,12 @@
+@import '../../vendor/mixin.scss';
+@import '../../vendor/constants.scss';
+
+.name {
+  display: flex;
+  flex-direction: column;
+  list-style-type:  none;
+  padding: 0 0 0 30px;
+  &__origin {
+    @include text($textL, 600, $textWhite);
+  }
+}

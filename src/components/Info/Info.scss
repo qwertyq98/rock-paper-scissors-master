@@ -1,0 +1,15 @@
+@import '../../vendor/constants.scss';
+
+.info {
+  max-width: 700px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 50px;
+  &__wrapper {
+    border: 2px solid $textWhite;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
