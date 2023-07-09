@@ -4,12 +4,12 @@ import Score from '../Score/Score';
 
 //import photo from "../../images/photo.png";
 
-function Info() {
+function Info({result}) {
   return (
     <section className='info'>
       <div className='info__wrapper'>
         <Name/>
-        <Score />
+        <Score result={result} />
       </div>
     </section>
   )

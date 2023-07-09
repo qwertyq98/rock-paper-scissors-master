@@ -32,7 +32,7 @@
     -webkit-box-shadow: 10px 19px 37px 1px rgba(0, 0, 0, 0.40);
     -moz-box-shadow: 10px 19px 37px 1px rgba(0, 0, 0, 0.40);
     box-shadow: 10px 19px 37px 1px rgba(0, 0, 0, 0.40);
-    transition: 1s;
+    transition: 1s linear;
   }
   &__button:hover {
     transform: scale(1.05);

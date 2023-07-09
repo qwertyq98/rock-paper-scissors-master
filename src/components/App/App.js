@@ -11,6 +11,7 @@ function App() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isOrigin, setIsOrigin] = React.useState('');
   const [yourChoice, setYourChoice] = React.useState('');
+  const [result, setResult] = React.useState(12);
 
   function handleOpenPopap() {
     setIsOpen(true);
@@ -24,20 +25,29 @@ function App() {
     setYourChoice(figure);
   }
 
+  function changeResult(res) {
+    setResult(res);
+  }
+
   return(
     <div className="page">
       {isOrigin === '' ? <Options setIsOrigin={setIsOrigin} /> : isOrigin === 'original' ? 
       <>
-        <Info />
+        <Info result={result}/>
         {yourChoice === '' ?
           <Main onClickFigure={onClickFigure}/> :
-          <Choice yourChoice={yourChoice} />
+          <Choice 
+            yourChoice={yourChoice} 
+            onClickFigure={onClickFigure} 
+            changeResult={changeResult}
+            result={result}
+          />
         }
         <Rules handleOpenPopap={handleOpenPopap} />
         {isOpen ? 
           <Popap handleClosePopap={handleClosePopap} />: <></>
         }
-      </>: <></>} 
+      </>: <h1>in developing...</h1>} 
     </div>
   )
 }

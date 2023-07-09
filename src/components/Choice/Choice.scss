@@ -16,12 +16,15 @@
   &__text {
     @include text($textM, 600, $textWhite);
     margin: 20px 0 60px;
+    z-index: 1000;
   }
   &__result-wrapper {
     display: flex;
     flex-direction: column;
     align-self: center;
     align-items: center;
+    z-index: 1000;
+    transition: 1s linear;
   }
   &__result-text {
     @include text($textXL, 600, $textWhite);

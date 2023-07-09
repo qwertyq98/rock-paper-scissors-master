@@ -5,6 +5,8 @@
   min-width: 320px;
   margin: 0 auto;
   padding: 50px;
+  z-index: 1000;
+  position: relative;
   &__wrapper {
     border: 2px solid $textWhite;
     border-radius: 10px;
