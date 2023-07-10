@@ -90,6 +90,7 @@
     &__wrapper {
       grid-template-columns: repeat(2, 140px);
       gap: 5px;
+      padding: 30px 10px;
     }
     &__text {
       @include text($textS, 600, $textWhite);
