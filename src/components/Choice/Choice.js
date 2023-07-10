@@ -49,17 +49,17 @@ function Choice({yourChoice, onClickFigure, changeResult, result}) {
   return (
     <section className='choice'>
       <div className='choice__wrapper'>
-        <h3 className='choice__text'>YOU PICKED</h3>
-        <div></div>
-        <h3 className='choice__text'>THE HOUSE PICKED</h3>
-        <Figure type={yourChoice} size={'_l'} winer={resultText === 'YOU WIN' ?  winer : ''} />
-        { resultText === '' ? <div></div> :
-          <div className='choice__result-wrapper'>
+        <h3 className='choice__text choice_first'>YOU PICKED</h3>
+        <div className='choice__none'></div>
+        <h3 className='choice__text choice_second'>THE HOUSE PICKED</h3>
+        <Figure type={yourChoice} size={'_l choice_third'} winer={resultText === 'YOU WIN' ?  winer : ''} />
+        { resultText === '' ? <div className='choice__none'></div> :
+          <div className='choice__result-wrapper choice_forth'>
             <p className='choice__result-text'>{resultText}</p>
             <button className='choice__result-button' onClick={playAgain}>PLAY AGAIN</button>
           </div>
         }
-        <Figure type={originBot} size={'_l'} winer={resultText === 'YOU LOSE' ? winer : ''}/>
+        <Figure type={originBot} size={'_l choice_fifth'} winer={resultText === 'YOU LOSE' ? winer : ''}/>
       </div>
     </section>
   )

@@ -2,7 +2,6 @@
 
 .main {
   max-width: 1400px;
-  min-width: 320px;
   margin: 0 auto;
   &__wrapper {
     text-align: center;
@@ -51,6 +50,7 @@
     background-size: 40%;
     cursor: pointer;
     align-self: center;
+    z-index: 1;
     &_ {
       display: flex;
     }
@@ -110,8 +110,31 @@
       width: 235px;
       height: 209px;
     }
-    &__wrapper {
-      height: 420px;
+    &__bottom {
+      &__wrapper {
+        height: 420px;
+      }
+      &_paper {
+        &_l {
+          width: 180px;
+          height: 180px;
+          border: 20px solid $backgroundPaperOne;
+        }
+      }
+      &_scissors {
+        &_l {
+          width: 180px;
+          height: 180px;
+          border: 20px solid $backgroundScissorsOne;
+        }
+      }
+      &_rock {
+        &_l {
+          width: 180px;
+          height: 180px;
+          border: 20px solid $backgroundRockOne;
+        }
+      }
     }
   }
 }

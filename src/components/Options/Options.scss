@@ -93,12 +93,12 @@
   .options {
     padding: 20px 30px;
     &__wraper {
-      grid-template-columns: repeat(1, 250px);
+      grid-template-columns: repeat(1, 200px);
       padding-top: 30px;
     }
     &__img {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
     }
     &__title {
       @include text($textM, 700, $textWhite);
