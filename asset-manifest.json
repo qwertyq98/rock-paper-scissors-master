@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/qwertyq98/rock-paper-scissors-master/static/css/main.0fd17abf.css",
-    "main.js": "/qwertyq98/rock-paper-scissors-master/static/js/main.6c5c994b.js",
+    "main.js": "/qwertyq98/rock-paper-scissors-master/static/js/main.a2b1fd3b.js",
     "static/js/787.25e1ddda.chunk.js": "/qwertyq98/rock-paper-scissors-master/static/js/787.25e1ddda.chunk.js",
     "static/media/635x635_0xac120003_jpeg": "/qwertyq98/rock-paper-scissors-master/static/media/635x635_0xac120003_4350076711630424259.7dc537861cb5a09a4501.jpeg",
     "static/media/jpg": "/qwertyq98/rock-paper-scissors-master/static/media/163801513916978301.e61a24ed247cde33ba93.jpg",
@@ -17,11 +17,11 @@
     "static/media/icon-close.svg": "/qwertyq98/rock-paper-scissors-master/static/media/icon-close.bde602ecd1a4e55e0c27.svg",
     "static/media/bg-triangle.svg": "/qwertyq98/rock-paper-scissors-master/static/media/bg-triangle.77c6ca418d3751d8f71789234314a8b9.svg",
     "main.0fd17abf.css.map": "/qwertyq98/rock-paper-scissors-master/static/css/main.0fd17abf.css.map",
-    "main.6c5c994b.js.map": "/qwertyq98/rock-paper-scissors-master/static/js/main.6c5c994b.js.map",
+    "main.a2b1fd3b.js.map": "/qwertyq98/rock-paper-scissors-master/static/js/main.a2b1fd3b.js.map",
     "787.25e1ddda.chunk.js.map": "/qwertyq98/rock-paper-scissors-master/static/js/787.25e1ddda.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fd17abf.css",
-    "static/js/main.6c5c994b.js"
+    "static/js/main.a2b1fd3b.js"
   ]
 }
