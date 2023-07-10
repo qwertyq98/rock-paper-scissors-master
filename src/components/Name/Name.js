@@ -1,7 +1,5 @@
 import './Name.scss';
 
-//import photo from "../../images/photo.png";
-
 function Name() {
   return (
     <ul className='name'>

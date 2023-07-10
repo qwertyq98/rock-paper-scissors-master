@@ -4,7 +4,6 @@
 .options {
   margin: 0 auto;
   max-width: 1000px;
-  min-width: 320px;
   padding: 40px;
   text-align: center;
   &__title {
@@ -42,5 +41,68 @@
     height: 400px;
     object-fit: cover;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .options {
+    padding: 40px 60px;
+    &__wraper {
+      grid-template-columns: repeat(2, 300px);
+      justify-content: center;
+      gap: 0 40px;
+      padding-top: 100px
+    }
+    &__name {
+      @include text($textXS, 600, $textGray);
+      line-height: 1;
+      margin: 20px auto;
+    }
+    &__img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .options {
+    padding: 40px 60px;
+    &_second {
+      order: 1;
+    }
+    &_third {
+      order: 2;
+    }
+    &_forth {
+      order: 3;
+    }
+    &__wraper {
+      grid-template-columns: repeat(1, 350px);
+      gap: 10px 0;
+      padding-top: 50px;
+    }
+    &__img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .options {
+    padding: 20px 30px;
+    &__wraper {
+      grid-template-columns: repeat(1, 250px);
+      padding-top: 30px;
+    }
+    &__img {
+      width: 250px;
+      height: 250px;
+    }
+    &__title {
+      @include text($textM, 700, $textWhite);
+      margin: 20px auto;
+    }
   }
 }

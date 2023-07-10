@@ -9,14 +9,39 @@
     background-color: $backgroundWhite;
     padding: 20px 50px;
     border-radius: 10px;
-    text-align: center
+    text-align: center;
   }
   &__text {
-    @include text($textS, 600, $textBlue);
     padding-bottom: 10px;
+    @include text($textS, 600, $textBlue);
   }
   &__value {
     @include text($textXL, 600, $textGray);
     padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .score {
+    &__wrapper {
+      margin: 10px 20px;
+      padding: 15px 30px;
+    }
+    &__text {
+      @include text($textXS, 600, $textBlue);
+      padding-bottom: 10px;
+    }
+    &__value {
+      @include text($textL, 600, $textGray);
+      padding-bottom: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .score {
+    &__wrapper {
+      padding: 10px 20px;
+    }
   }
 }

@@ -12,6 +12,15 @@
     background-color: transparent;
     border: 2px solid $backgroundWhite;
     cursor: pointer;
-    @include text($textS, 600, $textWhite);
+    @include text($textXS, 600, $textWhite);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rules {
+    text-align: center;
+    left: 0;  
+    right: 0;
+    bottom: 80px;
   }
 }

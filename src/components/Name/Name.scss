@@ -6,7 +6,26 @@
   flex-direction: column;
   list-style-type:  none;
   padding: 0 0 0 30px;
+  align-self: center;
   &__origin {
     @include text($textL, 600, $textWhite);
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+  .name {
+    padding: 0 0 0 20px;
+    &__origin {
+      @include text($textM, 600, $textWhite);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .name {
+    &__origin {
+      @include text($textS, 700, $textWhite);
+    }
   }
 }

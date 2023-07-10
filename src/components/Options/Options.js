@@ -15,11 +15,11 @@ function Options({setIsOrigin}) {
       <h1 className='options__title'>SIMPLE OR HARD?</h1>
       <div className='options__wraper'>
         <h2 className='options__name'>PAPER / ROCK / SCISSORS</h2>
-        <h2 className='options__name'>PAPER / ROCK / SCISSORS / LIZARD / SPOCK</h2>
-        <button className='options__button' onClick={handleClickOriginal}>
+        <h2 className='options__name options_third'>PAPER / ROCK / SCISSORS / LIZARD / SPOCK</h2>
+        <button className='options__button options_second' onClick={handleClickOriginal}>
           <img src={origin} className='options__img' alt='origin' />
         </button>
-        <button className='options__button' onClick={handleClickBonus}>
+        <button className='options__button options_forth' options_first onClick={handleClickBonus}>
           <img src={bonus} className='options__img' alt='bonus' />
         </button>
       </div>

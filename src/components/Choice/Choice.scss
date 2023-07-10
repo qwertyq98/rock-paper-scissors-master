@@ -36,7 +36,7 @@
     margin: 25px 0 0;
     height: 55px;
     border-radius: 10px;
-    @include text($textS, 600, $textBlue);
+    @include text($textXS, 600, $textBlue);
     cursor: pointer;
   }
 }
